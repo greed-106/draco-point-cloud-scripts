@@ -1,0 +1,17 @@
+# environment.yml
+
+name: ptcl-codec  # 环境名称
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  # 基础依赖项（通过 conda 安装）
+  - python=3.12  # 指定 Python 版本
+  - pip  # 确保 pip 可用
+
+  # 使用 pip 安装特定版本的包
+  - pip:
+    - numpy==1.26.4
+    - open3d==0.19.0
+    - plyfile==1.1
+    - DracoPy==1.5.0
